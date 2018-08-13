@@ -91,6 +91,8 @@ Create a Twig file according to the location asked by the above file, in this ex
 
 {% block content %}
 
+    {{ fn('the_post') }}
+
     {% do action('woocommerce_before_single_product') %}
 
     <article itemscope itemtype="http://schema.org/Product" class="single-product-details {{ post.class }}">
